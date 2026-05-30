@@ -10,7 +10,8 @@ username = st.text_input("กรอกชื่อก่อน!!!!!!!")
 if st.button("ยืนยัน"):
     if username:  # ตรวจสอบว่าถ้าออมกรอกชื่อมาแล้ว ถึงจะให้ทำข้างล่างนี้
         st.write(f"สวัสดีค้าบ {username} พร้อมแล้วก็ไป")
-        st.balloons()  
+        st.image("ghost.jpg" , caption="หวานเจี้ยบ")
+
     else:
         # ถ้ายังไม่กรอกชื่อแล้วกดปุ่ม
         st.error("เฮ้ย! กรอกชื่อก่อนเฟ้ย")
